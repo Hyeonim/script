@@ -18,13 +18,20 @@
 }
 
 
-```
-        let book = {
+```  let book = {
 
-            title: "phyon"
-            , page: 20
+            title: "phyon",
+            page: 20,
+            array: ["java", "html", "css"],
+            content: {
+                a: 10,
+                b: 20
+                //배열 안에 배열 넣기
+            }
         }
 
         console.log(book);
         console.log(book.page);
+        console.log(book.array);
+        console.log(book.content.a); // 배열안에 배열을 넣어서 출력도 가능
 ```
