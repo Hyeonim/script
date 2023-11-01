@@ -57,3 +57,47 @@ ex)
 
 ● 객체 중첩하기 <br>
 객체 안에 또다른 객체를 넣을 수 있다 - 둘 이상의 객체 중첩
+```
+    let student = {
+            name: "철수",
+            score: {
+                국어: 40,
+                수학: 70,
+                average: function () {
+                    return (this.sum()) / 2
+                },
+                sum : function () {
+                return(this.국어 + this.수학)
+                }
+            }
+        }
+        console.log(student.score.average());
+        console.log(student.score.sum());
+
+```
+
+● 객체 메서드 정의하기 <br>
+메서드(method) : 객체의 프로퍼티중 객체의 동작을 지정하는 함수 <br>
+메서드를 선언하는 방법은 일반적인 함수를 선언하는 것과 비슷
+
+```
+let book = {
+title : 'phyon',
+buy : function () {
+    console.log('이 책을 구입했습니다.);
+}
+}
+```
+
+● 객체 복사하기 <BR>
+
+(1) 원시 유형 자료 복사 <br>
+'값'을 복사한다<br>
+복사한 자료의 값을 변경하고 원래 자료의 값은 그대로<br>
+
+(2)객체 복사 <br>
+'주소'를 복사한다 <br>
+복사한 자료의 값 변경되고 원래 자료의 값도 바뀜<br>
+
+
+
